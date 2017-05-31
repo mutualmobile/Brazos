@@ -7,8 +7,8 @@ export default platform = {
 	render: function({navigation}) {
 		return (
 			<View>
-				<Text>Native Home View</Text>
-				<ActiveLink navigation={navigation} to='page'></ActiveLink>
+				<Text>Native Page View</Text>
+				<ActiveLink navigation={navigation} to='home'></ActiveLink>
 			</View>
 		);
 	}

@@ -11,7 +11,7 @@ const ActiveLink = ({ to, activeOnlyWhenExact, ...rest }) => (
         });
         navigation.dispatch(navigateAction);
       }}
-      title="Go to a posts screen"
+      title={'Go to '+to}
     />
 );
 

@@ -42,23 +42,9 @@ export default class App extends Component {
 				/>
 				<Route
 					exact
-					path="/posts"
+					path="/page"
 					render={props => (
-						<LazyRoute {...props} component={import("../components/SubPage")} />
-					)}
-				/>
-				<Route
-					exact
-					path="/posts/:id"
-					render={props => (
-						<LazyRoute {...props} component={import("../components/SubItem")} />
-					)}
-				/>
-				<Route
-					exact
-					path="/login"
-					render={props => (
-						<LazyRoute {...props} component={import("../components/Login")} />
+						<LazyRoute {...props} component={import("../components/Page")} />
 					)}
 				/>
 				<footer>
