@@ -62,7 +62,6 @@ export default class App extends Component {
 					)}
 				/>
 				<footer>
-					{testval}
 					
 				</footer>
 			</div>
