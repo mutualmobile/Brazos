@@ -55,3 +55,4 @@ fastlane/screenshots
 # Web
 dist/
 .env
+.vscode

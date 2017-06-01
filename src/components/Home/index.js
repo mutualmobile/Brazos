@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { inject, observer } from "mobx-react";
 import platformCode from "./Extensions";
 
-//@inject("store")
-//@observer
+
+@observer
 export default class Home extends Component {
 	constructor(props) {
 		super(props);
