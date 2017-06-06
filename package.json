@@ -8,7 +8,9 @@
     "preview": "http-server ./dist -p 1234 -c-1",
     "test": "echo \"Error: no test specified\" && exit 1",
     "rnstart": "node node_modules/react-native/local-cli/cli.js start",
-    "rntest": "jest"
+    "rntest": "jest",
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build"
   },
   "dependencies": {
     "axios": "^0.15.0",

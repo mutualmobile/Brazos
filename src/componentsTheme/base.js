@@ -1,3 +1,4 @@
 export default { 
-  primaryColor: "#00000"
+  primaryTextColor: "#000000",
+  fontSizeHeading1: "20px"
 };
