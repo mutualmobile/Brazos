@@ -1,0 +1,10 @@
+{
+	"folders":
+	[
+		{
+			"path": ".",
+			"folder_exclude_patterns":["ios", "node_modules","android"],
+      "file_exclude_patterns": ["LICENSE","yarn.lock","Brazos.sublime-project", "node-pre-gyp", "*.min.js", "*.min.css", "*.ico", "*.png", "*.txt", "*.md", ".*"]
+		}
+	]
+}
