@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { inject, observer } from "mobx-react";
-import platformCode from "./Extensions";
+import platformCode from "./PageExt";
 
 //@inject("store")
 //@observer
