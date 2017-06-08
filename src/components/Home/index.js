@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { inject, observer } from "mobx-react";
-import platformCode from "./Extensions";
+import platformCode from "./HomeExt";
 
 //@inject("store")
 @observer
