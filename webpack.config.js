@@ -25,7 +25,7 @@ module.exports = {
         publicPath: "/",
         filename: "app.[hash].js"
     },
-    devtool: "eval",
+    devtool: "source-map",
     module: {
         rules: [
             {
