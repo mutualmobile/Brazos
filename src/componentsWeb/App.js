@@ -3,10 +3,12 @@ import { Route, Link } from "react-router-dom";
 import { inject, observer } from "mobx-react";
 import LazyRoute from "lazy-route";
 import DevTools from "mobx-react-devtools";
+import {withRouter} from 'react-router'
 
 import TopBar from "./TopBar";
 
 @inject("store")
+@withRouter
 @observer
 export default class App extends Component {
 	constructor(props) {

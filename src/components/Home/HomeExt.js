@@ -8,8 +8,8 @@ export default platformCode = {
 		const store = this.store;
 		return (
 			<div className="page home">
-        <Heading1>Web Home View</Heading1>
-				<ActiveLink activeOnlyWhenExact={true} to="/page">Page</ActiveLink>
+        <Heading1>Home View</Heading1>
+				<ActiveLink activeOnlyWhenExact={true} to="/page">Go To Page</ActiveLink>
 			</div>
 		);
 	}

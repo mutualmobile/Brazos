@@ -23,7 +23,7 @@ function getCurrentState(state){
 }
 
 export default class NavigationStore {
-  // @observable.ref navigationState = null;
+  @observable.ref navigationState = null;
 
   @action setNavigator(navigator) {
     this.navigator = navigator;
