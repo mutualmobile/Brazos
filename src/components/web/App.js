@@ -1,13 +1,13 @@
-import React, { Component } from "react";
-import { Route, Link } from "react-router-dom";
-import { inject, observer } from "mobx-react";
-import LazyRoute from "lazy-route";
-import DevTools from "mobx-react-devtools";
+import React, { Component } from 'react';
+import { Route, Link } from 'react-router-dom';
+import { inject, observer } from 'mobx-react';
+import LazyRoute from 'lazy-route';
+import DevTools from 'mobx-react-devtools';
 import {withRouter} from 'react-router'
 
-import TopBar from "./TopBar";
+import TopBar from './TopBar';
 
-@inject("store")
+@inject('store')
 @withRouter
 @observer
 export default class App extends Component {
@@ -31,22 +31,22 @@ export default class App extends Component {
 			testval
 		} = this.store.appState;
 		return (
-			<div className="wrapper">
+			<div className='wrapper'>
 				{/*<DevTools />*/}
 				<TopBar />
 
 				<Route
 					exact
-					path="/"
+					path='/'
 					render={props => (
-						<LazyRoute {...props} component={import("../components/Home")} />
+						<LazyRoute {...props} component={import('../shared/Home')} />
 					)}
 				/>
 				<Route
 					exact
-					path="/page"
+					path='/page'
 					render={props => (
-						<LazyRoute {...props} component={import("../components/Page")} />
+						<LazyRoute {...props} component={import('../shared/Page')} />
 					)}
 				/>
 				<footer>

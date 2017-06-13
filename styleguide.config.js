@@ -1,4 +1,4 @@
 module.exports = {
-  components: 'src/componentsTheme/**/index.js',
+  components: 'src/components/theme/**/index.js',
   ignore: ['**/Extensions.*', '**/base.js']
 };

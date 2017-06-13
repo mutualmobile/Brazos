@@ -1,9 +1,9 @@
-import React, { Component } from "react";
-import { inject, observer } from "mobx-react";
-import { Route, Link } from "react-router-dom";
-import ActiveLink from "../components/ui/ActiveLink";
+import React, { Component } from 'react';
+import { inject, observer } from 'mobx-react';
+import { Route, Link } from 'react-router-dom';
+import ActiveLink from '../theme/ActiveLink';
 
-@inject("store")
+@inject('store')
 @observer
 export default class TopNav extends Component {
 	constructor(props) {
@@ -20,8 +20,8 @@ export default class TopNav extends Component {
 		const { authenticated, authenticating } = this.store;
 		return (
 			<nav>
-				<ActiveLink activeOnlyWhenExact={true} to="/">Home</ActiveLink>
-				<ActiveLink to="/page">Page</ActiveLink>
+				<ActiveLink activeOnlyWhenExact={true} to='/'>Home</ActiveLink>
+				<ActiveLink to='/page'>Page</ActiveLink>
 			</nav>
 		);
 	}

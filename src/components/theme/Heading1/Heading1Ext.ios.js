@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import { Text, StyleSheet } from 'react-native';
-import base from "../base";
+import base from '../base';
 
 const styles = StyleSheet.create({
   heading1: {

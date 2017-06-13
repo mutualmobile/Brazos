@@ -1,14 +1,14 @@
-import("./styles/main.scss");
-import React from "react";
-import { render } from "react-dom";
-import { BrowserRouter as Router } from "react-router-dom";
-import { Provider } from "mobx-react";
-import { AppContainer } from "react-hot-loader";
-import { rehydrate, hotRehydrate } from "rfx-core";
+import('./styles/main.scss');
+import React from 'react';
+import { render } from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from 'mobx-react';
+import { AppContainer } from 'react-hot-loader';
+import { rehydrate, hotRehydrate } from 'rfx-core';
 
-import { isProduction } from "./utils/constants";
-import App from "./componentsWeb/App";
-import stores from "./stores/stores";
+import { isProduction } from './utils/constants';
+import App from './components/web/App';
+import stores from './stores/stores';
 
 const store = rehydrate();
 
@@ -21,7 +21,7 @@ const renderApp = Component => {
 				</Provider>
 			</Router>
 		</AppContainer>,
-		document.getElementById("root")
+		document.getElementById('root')
 	);
 };
 

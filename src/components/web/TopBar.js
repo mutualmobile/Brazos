@@ -1,12 +1,12 @@
-import React, { Component } from "react";
-import { inject, observer } from "mobx-react";
-import { Link, withRouter } from "react-router-dom";
+import React, { Component } from 'react';
+import { inject, observer } from 'mobx-react';
+import { Link, withRouter } from 'react-router-dom';
 
-import TopNav from "./TopNav";
-import Button from "../components/ui/Button";
+import TopNav from './TopNav';
+import Button from '../theme/Button';
 
 @withRouter
-@inject("store")
+@inject('store')
 @observer
 export default class TopBar extends Component {
 	constructor(props) {
@@ -16,18 +16,18 @@ export default class TopBar extends Component {
 
 	authenticate(e) {
 		if (e) e.preventDefault();
-		console.log("CLICKED BUTTON");
+		console.log('CLICKED BUTTON');
 		this.store.authenticate();
 	}
 
 	render() {
 		const { authenticated } = this.store;
 		return (
-			<div className="topbar">
+			<div className='topbar'>
 				<TopNav location={this.props.location} />
 				<Button
 					onClick={this.authenticate.bind(this)}
-					title={authenticated ? "Log out" : "Sign in"}
+					title={authenticated ? 'Log out' : 'Sign in'}
 				/>
 			</div>
 		);

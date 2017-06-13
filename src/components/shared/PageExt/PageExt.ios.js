@@ -1,6 +1,6 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import { StyleSheet, Image, View, Text } from 'react-native';
-import ActiveLink from "../ui/ActiveLink";
+import ActiveLink from '../../theme/ActiveLink';
 
 
 export default platform = {

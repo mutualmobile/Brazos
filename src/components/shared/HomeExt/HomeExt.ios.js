@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import { StyleSheet, Image, View, Text } from 'react-native';
-import ActiveLink from "../ui/ActiveLink";
-import Heading1 from "../../componentsTheme/Heading1";
+import ActiveLink from '../../theme/ActiveLink';
+import Heading1 from '../../theme/Heading1';
 
 
 export default platform = {

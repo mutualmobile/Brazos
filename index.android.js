@@ -5,6 +5,6 @@ import {
   Text,
   View
 } from 'react-native';
-import StackNavigator from "./src/componentsApp/StackNavigator";
+import StackNavigator from './src/components/app/StackNavigator';
 
 AppRegistry.registerComponent('Brazos', () => StackNavigator);

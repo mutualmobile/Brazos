@@ -1,4 +1,4 @@
-import { store } from "rfx-core";
+import { store } from 'rfx-core';
 import NavigationStore from './NavigationStore'; 
 let nav = new NavigationStore();
 

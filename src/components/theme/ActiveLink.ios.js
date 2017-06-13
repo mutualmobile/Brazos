@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import { Button } from 'react-native';
 import { NavigationActions } from 'react-navigation'
 
