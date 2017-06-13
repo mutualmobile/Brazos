@@ -2,9 +2,9 @@ import React from 'react';
 import { Button, ScrollView, Text } from 'react-native';
 import { StackNavigator } from 'react-navigation';
 
-import Home from '../components/Home';
-import Page from '../components/Page';
-import {nav} from '../stores/navigator';
+import Home from '../shared/Home';
+import Page from '../shared/Page';
+import {nav} from '../../stores/navigator';
 
 Home.navigationOptions = {
   title: 'Home',
