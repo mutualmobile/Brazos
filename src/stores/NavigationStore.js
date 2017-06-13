@@ -13,6 +13,7 @@ import autobind from 'autobind-decorator';
 export let HasRouter = {
   router: NavigationRouter,
 };
+let NavOrHasRouter = NavigationNavigator || HasRouter;
 
 function getCurrentState(state){
   const childRoute = state.routes[state.index];
@@ -24,6 +25,7 @@ function getCurrentState(state){
 
 export default class NavigationStore {
   @observable.ref navigationState = null;
+  navigator: ?NavOrHasRouter = null;
 
   @action setNavigator(navigator) {
     this.navigator = navigator;
@@ -84,6 +86,11 @@ export default class NavigationStore {
   }
 
   @autobind navigate(routeName,params,navAction){
+    // const navigateAction = NavigationActions.navigate({
+    //   routeName: routeName,
+    //   params: {}
+    // });
+    // navigation.dispatch(navigateAction);
     return this.dispatchNavigation(
       NavigationActions.navigate({
         routeName,

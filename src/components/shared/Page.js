@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { inject, observer } from "mobx-react";
-import platformCode from "./PageExt";
+import React, { Component } from 'react';
+import { inject, observer } from 'mobx-react';
+import platformCode from './PageExt';
 import {withRouter} from 'react-router'
 
 //@inject("store")

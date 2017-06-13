@@ -1,10 +1,11 @@
-import React from 'react';
+import React,{Component} from 'react';
 import { Button, ScrollView, Text } from 'react-native';
+import { Provider } from 'mobx-react/native';
 import { StackNavigator } from 'react-navigation';
 
 import Home from '../shared/Home';
 import Page from '../shared/Page';
-import {nav} from '../../stores/navigator';
+import stores from '../../stores';
 
 Home.navigationOptions = {
   title: 'Home',
@@ -22,6 +23,15 @@ const StackNavigation = StackNavigator({
     screen: Page,
   },
 });
-debugger;
-nav.setNavigator(StackNavigation);
-export default StackNavigation;
+
+stores.nav.setNavigator(StackNavigation)
+
+export default class App extends Component {
+  render() {
+    return (
+      <Provider {...stores}>
+        <StackNavigation />
+      </Provider>
+    );
+  }
+}

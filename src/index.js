@@ -1,5 +1,6 @@
 import('./styles/main.scss');
 import React from 'react';
+import { store } from 'rfx-core';
 import { render } from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'mobx-react';
@@ -8,15 +9,15 @@ import { rehydrate, hotRehydrate } from 'rfx-core';
 
 import { isProduction } from './utils/constants';
 import App from './components/web/App';
-import stores from './stores/stores';
-
-const store = rehydrate();
+import stores from './stores';
+store.setup(stores);
+const allStores = rehydrate();
 
 const renderApp = Component => {
 	render(
 		<AppContainer>
 			<Router>
-				<Provider store={isProduction ? store : hotRehydrate()}>
+				<Provider store={isProduction ? allStores : hotRehydrate()}>
 					<App />
 				</Provider>
 			</Router>
