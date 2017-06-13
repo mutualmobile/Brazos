@@ -6,6 +6,7 @@ import { StackNavigator } from 'react-navigation';
 import Home from '../shared/Home';
 import Page from '../shared/Page';
 import stores from '../../stores';
+import createNavigationWrapper from '../../utils/createNavigationWrapper'
 
 Home.navigationOptions = {
   title: 'Home',
@@ -25,12 +26,12 @@ const StackNavigation = StackNavigator({
 });
 
 stores.nav.setNavigator(StackNavigation)
-
+let NavigationWrapper = createNavigationWrapper(StackNavigation);
 export default class App extends Component {
   render() {
     return (
       <Provider {...stores}>
-        <StackNavigation />
+        <NavigationWrapper />
       </Provider>
     );
   }

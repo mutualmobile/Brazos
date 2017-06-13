@@ -86,11 +86,6 @@ export default class NavigationStore {
   }
 
   @autobind navigate(routeName,params,navAction){
-    // const navigateAction = NavigationActions.navigate({
-    //   routeName: routeName,
-    //   params: {}
-    // });
-    // navigation.dispatch(navigateAction);
     return this.dispatchNavigation(
       NavigationActions.navigate({
         routeName,
