@@ -1,9 +1,8 @@
 ![Brazos](https://github.com/mutualmobile/Brazos/raw/master/brazos.png)
 
-# BRAZOS
-#### A React web React Native starter kit with lots of helpful tools for building out large scale apps and sites. 
+#### A React Web / React Native starter kit with lots of helpful tools for building out large scale apps and sites. 
 
-(ﾉ◕ヮ◕)ﾉ*・ﾟ✧
+. .(ﾉ◕ヮ◕)ﾉ*・ﾟ✧
 
 ## ✧ CLI TOOLS ✧
 We have packaged our tools into a handly little CLI which you can install with:
