@@ -57,18 +57,10 @@ if (!fs.existsSync(currentFile)){
   console.log('File already exists, skipping. ' + currentFile);
 }
 
-// Create Extension iOS
-currentFile = srcSharedClassExt + data.CLASSNAME+'Ext.ios.js';
+// Create Extension native
+currentFile = srcSharedClassExt + data.CLASSNAME+'Ext.native.js';
 if (!fs.existsSync(currentFile)){ 
-  p.preprocessFileSync(bpSharedExt + 'SharedExt.ios.js', currentFile, data, {type: 'js'});
-} else {
-  console.log('File already exists, skipping. ' + currentFile);
-}
-
-// Create Extension Android
-currentFile = srcSharedClassExt + data.CLASSNAME+'Ext.android.js';
-if (!fs.existsSync(currentFile)){ 
-  p.preprocessFileSync(bpSharedExt + 'SharedExt.android.js', currentFile, data, {type: 'js'});
+  p.preprocessFileSync(bpSharedExt + 'SharedExt.native.js', currentFile, data, {type: 'js'});
 } else {
   console.log('File already exists, skipping. ' + currentFile);
 }
