@@ -1,4 +1,4 @@
-![Brazos](https://raw.githubusercontent.com/mutualmobile/Brazos/master/brazos.svg)
+![Brazos](https://raw.githubusercontent.com/mutualmobile/Brazos/master/brazos.png)
 
 #BRAZOS
 ####A React web React Native starter kit with lots of helpful tools for building out large scale apps and sites. 
