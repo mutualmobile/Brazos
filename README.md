@@ -1,4 +1,29 @@
-Brazos
+![Brazos](https://raw.githubusercontent.com/mutualmobile/Brazos/master/brazos.svg)
+
+#BRAZOS
+####A React web React Native starter kit with lots of helpful tools for building out large scale apps and sites. 
+(ﾉ◕ヮ◕)ﾉ*・ﾟ✧
+
+##✧ CLI TOOLS ✧
+We have packaged our tools into a handly little CLI which you can install with:
+```bash
+$ npm install -g brazos-cli
+```
+###Create a new Project
+To create a new project, type 
+```bash
+$ brazos init AwesomeProjectName
+```
+and wait for the internet to finish downloading.
+
+###Scaffolding
+We have included blueprinting tools to quickly create files for your components across each platform.
+```bash
+$ brazos blueprint ComponentName
+```
+
+
+##✧ Other scripts ✧
 
 __Install Node Packages__
 ```bash
