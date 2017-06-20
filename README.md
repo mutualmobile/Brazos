@@ -1,7 +1,8 @@
-![Brazos](/brazos.png?raw=true)
+![Brazos](https://github.com/mutualmobile/Brazos/raw/master/brazos.png)
 
 # BRAZOS
-####A React web React Native starter kit with lots of helpful tools for building out large scale apps and sites. 
+#### A React web React Native starter kit with lots of helpful tools for building out large scale apps and sites. 
+
 (ﾉ◕ヮ◕)ﾉ*・ﾟ✧
 
 ## ✧ CLI TOOLS ✧
