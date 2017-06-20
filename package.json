@@ -66,5 +66,6 @@
   },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "brazos": true
 }
